@@ -25,7 +25,7 @@ div::after {
   width: 63vmin;
   top: 50%;
   left: 50%;
-  border-radius: 5%;
+  border-radius: 4vmin;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -33,11 +33,11 @@ div::after {
 div {
   -webkit-transform: translate3d(-64%, -50%, 0);
           transform: translate3d(-64%, -50%, 0);
-  background-image: radial-gradient(circle at 8% 5%, black 1vmin, transparent calc( 1vmin + 1px)), -webkit-gradient(linear, left top, left bottom, from(#ffe9dc), to(#e5b5a1));
-  background-image: radial-gradient(circle at 8% 5%, black 1vmin, transparent calc( 1vmin + 1px)), linear-gradient(#ffe9dc, #e5b5a1);
-  -webkit-box-shadow: inset 0 0.6vmin 1.8vmin 0.2vmin rgba(158, 111, 83, 0.5), inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba(158, 111, 83, 0.9), inset 0 -1.5vmin 1vmin 0 rgba(229, 181, 161, 0.8), inset -2vmin 0.5vmin 0.5vmin 0.5vmin rgba(229, 181, 161, 0.3), inset 0 2vmin 0.5vmin 0 rgba(252, 237, 230, 0.8), inset 0.2vmin 0 0.6vmin 1.6vmin rgba(253, 222, 202, 0.7);
-          box-shadow: inset 0 0.6vmin 1.8vmin 0.2vmin rgba(158, 111, 83, 0.5), inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba(158, 111, 83, 0.9), inset 0 -1.5vmin 1vmin 0 rgba(229, 181, 161, 0.8), inset -2vmin 0.5vmin 0.5vmin 0.5vmin rgba(229, 181, 161, 0.3), inset 0 2vmin 0.5vmin 0 rgba(252, 237, 230, 0.8), inset 0.2vmin 0 0.6vmin 1.6vmin rgba(253, 222, 202, 0.7);
-  /* side white */
+  background-image: radial-gradient(circle at 6.1% 4.5%, #253044 0.5vmin, #253044 calc( 0.5vmin + 1px), #131919 1vmin, #060200 1.4vmin, transparent calc( 1.4vmin + 1px)), -webkit-gradient(linear, left top, left bottom, from(#ffdcd8), to(#d8ada7));
+  background-image: radial-gradient(circle at 6.1% 4.5%, #253044 0.5vmin, #253044 calc( 0.5vmin + 1px), #131919 1vmin, #060200 1.4vmin, transparent calc( 1.4vmin + 1px)), linear-gradient(#ffdcd8, #d8ada7);
+  -webkit-box-shadow: inset 0 0.6vmin 1.8vmin 0.2vmin rgba(152, 105, 98, 0.5), inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba(152, 105, 98, 0.9), inset 0 -1.5vmin 1.2vmin 0 rgba(216, 173, 167, 0.8), inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba(216, 173, 167, 0.4), inset 0 2vmin 0.5vmin 0 rgba(255, 227, 224, 0.9), inset 0.2vmin 0 0.6vmin 1.4vmin rgba(255, 227, 224, 0.8);
+          box-shadow: inset 0 0.6vmin 1.8vmin 0.2vmin rgba(152, 105, 98, 0.5), inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba(152, 105, 98, 0.9), inset 0 -1.5vmin 1.2vmin 0 rgba(216, 173, 167, 0.8), inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba(216, 173, 167, 0.4), inset 0 2vmin 0.5vmin 0 rgba(255, 227, 224, 0.9), inset 0.2vmin 0 0.6vmin 1.4vmin rgba(255, 227, 224, 0.8);
+  /* --- front --- */
 }
 
 div::before {
@@ -45,7 +45,7 @@ div::before {
   display: block;
   -webkit-transform: translate3d(-22%, -50%, 0);
           transform: translate3d(-22%, -50%, 0);
-  background-color: #ffe9dc;
-  -webkit-box-shadow: -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.5);
-          box-shadow: -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.5);
+  background-color: #ffdcd8;
+  -webkit-box-shadow: -2vmin 1vmin 3vmin 0 rgba(152, 105, 98, 0.5);
+          box-shadow: -2vmin 1vmin 3vmin 0 rgba(152, 105, 98, 0.5);
 }

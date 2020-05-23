@@ -8,11 +8,10 @@ html {
 }
 
 /* --- Colours --- */
-$rgl1: #fcede6;
-$rgl2: #fddeca;
-$rg: #ffe9dc;
-$rgd: #e5b5a1;
-$s: #9e6f53;
+$rgl: #ffe3e0;
+$rg: #ffdcd8;
+$rgd1: #d8ada7;
+$rgd2: #986962;
 $w: #f5f6fa;
 $t: transparent;
 
@@ -22,7 +21,6 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  // background: linear-gradient( #ffffe5, #ffe7d3, #f5cec8 );
 }
 
 div,
@@ -32,7 +30,7 @@ div::after {
   width: 63vmin;
   top: 50%;
   left: 50%;
-  border-radius: 5%;
+  border-radius: 4vmin;
   position: absolute;
   background-repeat: no-repeat;
 }
@@ -40,24 +38,27 @@ div::after {
 div {
   transform: translate3d( -64%, -50%, 0 );
   background-image:
-    radial-gradient( circle at 8% 5%, black 1vmin, $t calc( 1vmin + 1px)),
-    linear-gradient( $rg, $rgd );
+    // lens black
+    radial-gradient( circle at 6.1% 4.5%, #253044 .5vmin, #253044 calc( 0.5vmin + 1px ), #131919 1vmin, #060200 1.4vmin, $t calc( 1.4vmin + 1px)),
+
+    // background
+    linear-gradient( $rg, $rgd1 );
   box-shadow:
     // background
-    inset 0 0.6vmin 1.8vmin 0.2vmin rgba( $s, 0.5 ),
-    inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $s, 0.9 ),
-    inset 0 -1.5vmin 1vmin 0 rgba( $rgd, 0.8 ),
-    inset -2vmin 0.5vmin 0.5vmin 0.5vmin rgba( $rgd, 0.3 ),
-    inset 0 2vmin 0.5vmin 0 rgba( $rgl1, 0.8 ),
-    inset 0.2vmin 0 0.6vmin 1.6vmin rgba( $rgl2, 0.7 ); /* side white */
+    inset 0 0.6vmin 1.8vmin 0.2vmin rgba( $rgd2, 0.5 ),
+    inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $rgd2, 0.9 ),
+    inset 0 -1.5vmin 1.2vmin 0 rgba( $rgd1, 0.8 ),
+    inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $rgd1, 0.4 ),
+    inset 0 2vmin 0.5vmin 0 rgba( $rgl, 0.9 ),
+    inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $rgl, 0.8 );
 
-  // front
+  /* --- front --- */
   &::before {
     content: '';
     display: block;
     transform: translate3d( -22%, -50%, 0 );
     background-color: $rg;
-    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $s, 0.5 );
+    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $rgd2, 0.5 );
     // background: linear-gradient() 100% 0 / 15.75em 40em,
     // linear-gradient() 0.25em 2em / 19.75em 36em;
   }
