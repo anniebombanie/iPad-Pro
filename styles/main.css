@@ -27,14 +27,16 @@ div::after {
   left: 50%;
   border-radius: 5%;
   position: absolute;
+  background-repeat: no-repeat;
 }
 
 div {
-  background-repeat: no-repeat;
   -webkit-transform: translate3d(-65%, -50%, 0);
           transform: translate3d(-65%, -50%, 0);
-  background-color: #fbbf9f;
-  z-index: 10;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fde7da), to(#e6b6a2));
+  background: linear-gradient(#fde7da, #e6b6a2);
+  -webkit-box-shadow: inset 0 0.5vmin 1.8vmin rgba(158, 111, 83, 0.6), inset 0 -1.3vmin 1vmin rgba(158, 111, 83, 0.8), -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.2);
+          box-shadow: inset 0 0.5vmin 1.8vmin rgba(158, 111, 83, 0.6), inset 0 -1.3vmin 1vmin rgba(158, 111, 83, 0.8), -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.2);
 }
 
 div::before {
@@ -42,6 +44,7 @@ div::before {
   display: block;
   -webkit-transform: translate3d(-20%, -50%, 0);
           transform: translate3d(-20%, -50%, 0);
-  background-color: #fddbc9;
-  z-index: -10;
+  background-color: #fde7da;
+  -webkit-box-shadow: -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.5);
+          box-shadow: -2vmin 1vmin 3vmin 0 rgba(158, 111, 83, 0.5);
 }

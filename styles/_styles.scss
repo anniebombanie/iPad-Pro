@@ -8,7 +8,8 @@ html {
 }
 
 /* --- Colours --- */
-$rg: #fddbc9;
+$rg: #fde7da;
+$s: #9e6f53;
 $w: #f5f6fa;
 $t: transparent;
 
@@ -30,20 +31,25 @@ div::after {
   left: 50%;
   border-radius: 5%;
   position: absolute;
+  background-repeat: no-repeat;
 }
 
 div {
-  background-repeat: no-repeat;
   transform: translate3d( -65%, -50%, 0 );
-  background-color: darken( $rg, 8.5 );
-  z-index: 10;
+  background: linear-gradient( $rg, #e6b6a2 );
+  box-shadow: inset 0 0.5vmin 1.8vmin rgba( $s, 0.6 ),
+              inset 0 -1.3vmin 1vmin rgba( $s, 0.8 ),
+              -2vmin 1vmin 3vmin 0 rgba( $s, 0.2 );
 
+  // front
   &::before {
     content: '';
     display: block;
     transform: translate3d( -20%, -50%, 0 );
     background-color: $rg;
-    z-index: -10;
+    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $s, 0.5 );
+    // background: linear-gradient() 100% 0 / 15.75em 40em,
+    // linear-gradient() 0.25em 2em / 19.75em 36em;
   }
 
   // extra details for back
