@@ -8,10 +8,10 @@ html {
 }
 
 /* --- Colours --- */
-$rgl: #ffe3e0;
-$rg: #ffdcd8;
-$rgd1: #d8ada7;
-$rgd2: #986962;
+$gl: #ffe3e0;
+$g: #ffdcd8;
+$gd1: #dcb1ab;
+$gd2: #986962;
 $w: #f5f6fa;
 $t: transparent;
 
@@ -39,28 +39,33 @@ div {
   transform: translate3d( -64%, -50%, 0 );
   background-image:
     // lens black
-    radial-gradient( circle at 6.1% 4.5%, #253044 .5vmin, #253044 calc( 0.5vmin + 1px ), #131919 1vmin, #060200 1.4vmin, $t calc( 1.4vmin + 1px)),
+    radial-gradient( circle at 6.7% 4.5%, #3a4d67 .2vmin, $t calc( 0.2vmin + 1px) ),
+    radial-gradient( circle at 6.4% 5.1%, #487f9e .1vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 6.6% 4.8%, #253044 .5vmin, #253044 calc( 0.5vmin + 1px ), #131919 1vmin, #060200 1.4vmin, $g calc( 1.4vmin + 1px), rgba( $gd2, 0.6 ) 1.8vmin, $t calc( 1.9vmin + 1px)),
+
+    // lens white
+    radial-gradient( circle at 6.6% 8.8%, #eae7d0 0.2vmin, #ece3d1 0.4vmin, #f9f7ea .6vmin, rgba( $gd2, 0.4 ) 0.8vmin, $t calc( 0.8vmin + 1px)),
 
     // background
-    linear-gradient( $rg, $rgd1 );
+    linear-gradient( $g, $gd1 );
   box-shadow:
     // background
-    inset 0 0.6vmin 1.8vmin 0.2vmin rgba( $rgd2, 0.5 ),
-    inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $rgd2, 0.9 ),
-    inset 0 -1.5vmin 1.2vmin 0 rgba( $rgd1, 0.8 ),
-    inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $rgd1, 0.4 ),
-    inset 0 2vmin 0.5vmin 0 rgba( $rgl, 0.9 ),
-    inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $rgl, 0.8 );
+    inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
+    inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
+    inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
+    inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
+    inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
+    inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
+    inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
+    -1.5vmin 0.5vmin 2vmin 0 rgba( $gd2, 0.2 );
 
   /* --- front --- */
   &::before {
     content: '';
     display: block;
     transform: translate3d( -22%, -50%, 0 );
-    background-color: $rg;
-    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $rgd2, 0.5 );
-    // background: linear-gradient() 100% 0 / 15.75em 40em,
-    // linear-gradient() 0.25em 2em / 19.75em 36em;
+    background-color: $g;
+    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $gd2, 0.6 );
   }
 
   // extra details for back
