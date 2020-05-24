@@ -34,7 +34,7 @@ div::after {
 
 div,
 div::before {
-  border-radius: 4.6vmin/ 5.6vmin;
+  border-radius: 3.6vmin/ 4.6vmin;
   top: 50%;
   left: 50%;
   height: 90vmin;
@@ -104,7 +104,7 @@ div {
     top: 50%;
     left: 58.2%;
     display: block;
-    border-radius: 4vmin/ 5.6vmin;
+    border-radius: 3vmin/ 4.6vmin;
     transform: translate3d( -30%, -50%, 0 );
     box-shadow:
       // thin outer border
@@ -127,12 +127,12 @@ div {
       linear-gradient( $b 6.6%, $t calc( 6.8% + 1px ), $t 92.9%, $b calc( 93% + 1px )),
       linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
       // screen
-      linear-gradient( 245deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
-      linear-gradient( 333deg, $t 35%, rgba( #48d8a4, 0.24 ) calc( 35% + 2px ), $t 80% ),
+      linear-gradient( 247deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
+      linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.3 ) calc( 30% + 2px ), $t 70% ),
       linear-gradient( 160deg, #ec008c, $t 60% ),
       linear-gradient( 90deg, #10afe0 9%, $t ),
       linear-gradient( 25deg, $t 25%, #7689d8 60%, $t 90%),
-      linear-gradient( 125deg, #1d5787 25%, #48d8a4 50% );
+      linear-gradient( 100deg, #3a5cec 10%, #eeb4aa );
   }
 }
 
