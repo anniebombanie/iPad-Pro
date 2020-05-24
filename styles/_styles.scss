@@ -85,8 +85,8 @@ div {
     -2vmin 1vmin 3vmin 0 rgba( $gd2, 0.6 );
 
     background:
-    // linear-gradient( 90deg, $t 1%, $gd3 2.5%, $gd1 25%, $g, $gd1 75%, $gd3 97%, $gd2, $gl ),
-    linear-gradient( $gl 1.5%, $gd3 2.5%, $gd1 25%, $g, $gd1 75%, $gd3 97%, $gd2, $gl );
+    linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 10%, $g, $gd1 85%, $gd3 97%, $gd2, $t ),
+    linear-gradient( $gl 1.5%, $gd3 2.5%, $gd1 15%, $g, $gd1 75%, $gd3 97%, $gd2, $gl );
 
     // background-size: 50px 50px;
   }
@@ -96,15 +96,19 @@ div {
     content: '';
     height: 89vmin;
     width: 62vmin;
-    border-radius: 3vmin/4vmin;
+    border-radius: 3.5vmin/4vmin;
     top: 50%;
     left: 58.2%;
     display: block;
-    background-color: $w;
     transform: translate3d( -30%, -50%, 0 );
     border: 1px solid $gd1;
 
-  // bottom holes
-    // background: linear-gradient( 90deg, $t 27%, $gd3 calc( 23% + 1px ) );
+    background:
+      linear-gradient( $w 7%, $t calc( 7% + 1px ), $t 94%, $w calc( 94% + 1px )),
+      linear-gradient( 90deg, $w 3%, $gd3 calc( 3% + 1px ), $gd3 97%, $w calc( 97% + 1px )),
+
+      $w;
+    // bottom holes
+    // linear-gradient( 90deg, $t 27%, $gd3 calc( 23% + 1px ) );
   }
 }

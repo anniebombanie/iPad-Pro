@@ -53,20 +53,20 @@ div::before {
   background-color: #ffdcd8;
   -webkit-box-shadow: -2vmin 1vmin 3vmin 0 rgba(152, 105, 98, 0.6);
           box-shadow: -2vmin 1vmin 3vmin 0 rgba(152, 105, 98, 0.6);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(1.5%, #ffe3e0), color-stop(2.5%, #643b35), color-stop(25%, #dcb1ab), color-stop(#ffdcd8), color-stop(75%, #dcb1ab), color-stop(97%, #643b35), color-stop(#986962), to(#ffe3e0));
-  background: linear-gradient(#ffe3e0 1.5%, #643b35 2.5%, #dcb1ab 25%, #ffdcd8, #dcb1ab 75%, #643b35 97%, #986962, #ffe3e0);
+  background: -webkit-gradient(linear, left top, right top, color-stop(2%, transparent), color-stop(2.5%, #643b35), color-stop(10%, #dcb1ab), color-stop(#ffdcd8), color-stop(85%, #dcb1ab), color-stop(97%, #643b35), color-stop(#986962), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(1.5%, #ffe3e0), color-stop(2.5%, #643b35), color-stop(15%, #dcb1ab), color-stop(#ffdcd8), color-stop(75%, #dcb1ab), color-stop(97%, #643b35), color-stop(#986962), to(#ffe3e0));
+  background: linear-gradient(90deg, transparent 2%, #643b35 2.5%, #dcb1ab 10%, #ffdcd8, #dcb1ab 85%, #643b35 97%, #986962, transparent), linear-gradient(#ffe3e0 1.5%, #643b35 2.5%, #dcb1ab 15%, #ffdcd8, #dcb1ab 75%, #643b35 97%, #986962, #ffe3e0);
 }
 
 div::after {
   content: '';
   height: 89vmin;
   width: 62vmin;
-  border-radius: 3vmin/4vmin;
+  border-radius: 3.5vmin/4vmin;
   top: 50%;
   left: 58.2%;
   display: block;
-  background-color: #f5f6fa;
   -webkit-transform: translate3d(-30%, -50%, 0);
           transform: translate3d(-30%, -50%, 0);
   border: 1px solid #dcb1ab;
+  background: linear-gradient(#f5f6fa 7%, transparent calc( 7% + 1px), transparent 94%, #f5f6fa calc( 94% + 1px)), linear-gradient(90deg, #f5f6fa 3%, #643b35 calc( 3% + 1px), #643b35 97%, #f5f6fa calc( 97% + 1px)), #f5f6fa;
 }
