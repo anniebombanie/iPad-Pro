@@ -116,17 +116,21 @@ div {
       radial-gradient( circle at 50% 3.5%, $b 0.4vmin, $t calc( 0.5vmin + 1px) ),
       // home button
       radial-gradient( circle at 51% 96.6%, $w 1.5vmin, $t calc( 1.5vmin + 1px) ),
-      radial-gradient( circle at 52.2% 96.9%, $w 0.8vmin, $t calc( 1.2vmin + 1px) ),
-      radial-gradient( circle at 50% 96.9%, $w 0.8vmin, $t calc( 1.2vmin + 1px) ),
+      radial-gradient( circle at 52.2% 96.9%, $g 0.8vmin, $t calc( 1.2vmin + 1px) ),
+      radial-gradient( circle at 50% 96.9%, $g 0.8vmin, $t calc( 1.2vmin + 1px) ),
       radial-gradient( circle at 51.9% 96.7%, $gd1 1.3vmin, $t calc( 1.5vmin + 1px) ),
       radial-gradient( circle at 50.2% 96.9%, $gd1 1.2vmin, $t calc( 1.4vmin + 1px) ),
       radial-gradient( circle at 51% 96.6%, $gd2 1.9vmin, $t calc( 1.9vmin + 1px) ),
-      // screen
+      // white part
       linear-gradient( $w 6.5%, $t calc( 6.7% + 1px ), $t 93%, $w calc( 93.1% + 1px )),
-      linear-gradient( 90deg, $w 3%, $b calc( 3.2% + 1px ), $b 97%, $w calc( 97.2% + 1px )),
-
-      $w;
-    // bottom holes
-    // linear-gradient( 90deg, $t 27%, $gd3 calc( 23% + 1px ) );
+      linear-gradient( 90deg, $w 3%, $t calc( 3.2% + 1px ), $t 97%, $w calc( 97.2% + 1px )),
+      linear-gradient( $b 6.6%, $t calc( 6.8% + 1px ), $t 92.9%, $b calc( 93% + 1px )),
+      linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
+      // screen
+      linear-gradient( 160deg, #ec008c, $t 60% ),
+      linear-gradient( 90deg, #10afe0, $t ),
+      linear-gradient( 25deg, $t 25%, #ed1524, #6a1f53 60%, $t 90%),
+      linear-gradient( 125deg, #1d5787 25%, #ed1524, #3a7e8b 50%, #30697a 90%);
   }
 }
+
