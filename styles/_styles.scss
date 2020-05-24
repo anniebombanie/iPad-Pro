@@ -45,17 +45,17 @@ div::before {
 div {
   /* --- back --- */
   transform: translate3d( -64%, -50%, 0 );
-  box-shadow:
-  // background
-  inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
-  inset -1vmin -0.4vmin 1vmin 0.1vmin rgba( $gd3, 0.6 ),
-  inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
-  inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
-  inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
-  inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
-  inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
-  inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
-  -1.5vmin 0.5vmin 2.5vmin 0 rgba( $gd2, 0.2 );
+  // box-shadow:
+  // // background
+  // inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
+  // inset -1vmin -0.4vmin 1vmin 0.1vmin rgba( $gd3, 0.6 ),
+  // inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
+  // inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
+  // inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
+  // inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
+  // inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
+  // inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
+  // -1.5vmin 0.5vmin 2.5vmin 0 rgba( $gd2, 0.2 );
   background:
     // lens black
     radial-gradient( circle at 6.5% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px) ),
@@ -131,10 +131,9 @@ div {
       linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.6%, $b calc( 97% + 1px )),
       // screen
       linear-gradient( 247deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
-      linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.5 ) calc( 30% + 2px ), $t 70% ),
+      linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.5 ) calc( 30% + 2px ), $t 80% ),
       linear-gradient( 160deg, #ec008c, $t 50% ),
-      linear-gradient( 90deg, #10afe0 9%, $t ),
-      linear-gradient( 25deg, $t 25%, #7689d8 60%, $t 90%),
+      linear-gradient( 90deg, #10afe0 9%, $t 85% ),
       linear-gradient( 100deg, #3a5cec 10%, #eeb4aa );
   }
 }
