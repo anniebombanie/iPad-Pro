@@ -48,9 +48,9 @@ div {
   box-shadow:
   // background
   inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
-  inset -1vmin -0.4vmin 1vmin 0.1vmin rgba( $gd3, 0.6 ),
+  inset -0.5vmin 0.1vmin 0.1vmin 0.1vmin $gd3,
   // inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
-  // inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
+  inset 0 -0.05vmin 0.3vmin 0.1vmin $gd3,
   // inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
   // inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
   // inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
@@ -60,14 +60,21 @@ div {
     //top knob
 
     // top holes
-    radial-gradient( circle at 14% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 15.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 17% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 18.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 20% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 21.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 23% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 24.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 13% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 14.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 16% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 17.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 19% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 20.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 22% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 23.5% 0.2%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    // bottom holes
+    radial-gradient( circle at 23.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 25% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 26.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 28% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 29.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 31% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
     // lens black
     radial-gradient( circle at 6.5% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px) ),
     radial-gradient( circle at 6.2% 4.4%, #487f9e 0.1vmin, $t calc( 0.25vmin + 1px) ),
@@ -84,14 +91,8 @@ div {
     radial-gradient( circle at 6.6% 7.5%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
-    // bottom holes
-    radial-gradient( circle at 24.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 26% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 27.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 29% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 30.5% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 32% 99.9%, $b 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    // linear-gradient( 90deg, green 60% ),
+    //side buttons
+    linear-gradient( $t 7.5%, green calc( 7.5% + 1px ), green 17%, $t calc( 17% + 1px ) ),
     // background
     linear-gradient( $g, $gd1 );
 
