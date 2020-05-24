@@ -12,6 +12,7 @@ $gl: #ffe3e0;
 $g: #ffdcd8;
 $gd1: #dcb1ab;
 $gd2: #986962;
+$gd3: #643b35;
 $w: #f5f6fa;
 $t: transparent;
 
@@ -26,46 +27,52 @@ body {
 div,
 div::before,
 div::after {
-  height: 90vmin;
-  width: 63vmin;
-  top: 50%;
-  left: 50%;
-  border-radius: 4vmin;
   position: absolute;
   background-repeat: no-repeat;
 }
 
+div,
+div::before {
+  border-radius: 4vmin;
+  top: 50%;
+  left: 50%;
+  height: 90vmin;
+  width: 63vmin;
+}
+
 div {
+  /* --- back --- */
   transform: translate3d( -64%, -50%, 0 );
+  box-shadow:
+  // background
+  inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
+  inset -1vmin -0.4vmin 1vmin 0.1vmin rgba( $gd3, 0.6 ),
+  inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
+  inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
+  inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
+  inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
+  inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
+  inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
+  -1.5vmin 0.5vmin 2vmin 0 rgba( $gd2, 0.2 );
   background-image:
     // lens black
     radial-gradient( circle at 6.7% 4.5%, #3a4d67 .2vmin, $t calc( 0.2vmin + 1px) ),
     radial-gradient( circle at 6.4% 5.1%, #487f9e .1vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 6.6% 4.8%, #253044 .5vmin, #253044 calc( 0.5vmin + 1px ), #131919 1vmin, #060200 1.4vmin, $g 1.5vmin, $t calc( 1.5vmin + 1px)),
+    radial-gradient( circle at 6.6% 4.8%, #253044 .5vmin, #253044 calc( 0.5vmin + 1px ), #131919 1vmin, #060200 1.4vmin, $g calc( 1.4vmin + 1px ), $t calc( 1.45vmin + 2px)),
     radial-gradient( circle at 6.2% 2.8%, $g 1.2vmin, $t calc( 1.8vmin + 1px) ),
     radial-gradient( circle at 7.6% 4.3%, darken( $gd2, 35 ) 0.6vmin, $t calc( 1vmin + 1px) ),
     radial-gradient( circle at 5.5% 5.2%, darken( $gd2, 35 ) 0.6vmin, $t calc( 1vmin + 1px) ),
     radial-gradient( circle at 7.6% 5.1%, $gd2 0.8vmin, $t calc( 1vmin + 1px) ),
     radial-gradient( circle at 6.6% 4.8%, $g 1.6vmin, rgba( $gd2, 0.6 ) 1.7vmin, $t calc( 1.8vmin + 1px)),
-
     // lens white
+    radial-gradient( circle at 6.4% 8.8%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
+    radial-gradient( circle at 6.8% 8.7%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
     radial-gradient( circle at 6.6% 8.8%, #eae7d0 0.1vmin, #ece3d1 0.2vmin, #f9f7ea .4vmin, $t calc( 0.5vmin + 1px)),
     radial-gradient( circle at 6.9% 8.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.3% 8.9%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.6% 8.8%, rgba( $gd2, 0.3 ) 0.8vmin, $t calc( 0.8vmin + 1px)),
-
     // background
     linear-gradient( $g, $gd1 );
-  box-shadow:
-    // background
-    inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
-    inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
-    inset 0 -1.5vmin 1.2vmin 0 rgba( $gd1, 0.8 ),
-    inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
-    inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
-    inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
-    inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
-    -1.5vmin 0.5vmin 2vmin 0 rgba( $gd2, 0.2 );
 
   /* --- front --- */
   &::before {
@@ -73,14 +80,31 @@ div {
     display: block;
     transform: translate3d( -22%, -50%, 0 );
     background-color: $g;
-    box-shadow: -2vmin 1vmin 3vmin 0 rgba( $gd2, 0.6 );
+    box-shadow:
+    // inset 1vmin 0.6vmin 0 60px $w,
+    -2vmin 1vmin 3vmin 0 rgba( $gd2, 0.6 );
+
+    background:
+    // linear-gradient( 90deg, $t 1%, $gd3 2.5%, $gd1 25%, $g, $gd1 75%, $gd3 97%, $gd2, $gl ),
+    linear-gradient( $gl 1.5%, $gd3 2.5%, $gd1 25%, $g, $gd1 75%, $gd3 97%, $gd2, $gl );
+
+    // background-size: 50px 50px;
   }
 
-  // extra details for back
-  // &::after {
-  //   content: '';
-  //   display: block;
-  //   background-color: $w;
-  //   transform: translate3d( -30%, -50%, 0 );
-  // }
+  // /* --- screen --- */
+  &::after {
+    content: '';
+    height: 89vmin;
+    width: 62vmin;
+    border-radius: 3vmin/4vmin;
+    top: 50%;
+    left: 58.2%;
+    display: block;
+    background-color: $w;
+    transform: translate3d( -30%, -50%, 0 );
+    border: 1px solid $gd1;
+
+  // bottom holes
+    // background: linear-gradient( 90deg, $t 27%, $gd3 calc( 23% + 1px ) );
+  }
 }
