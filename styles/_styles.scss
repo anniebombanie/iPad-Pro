@@ -126,9 +126,9 @@ div {
       radial-gradient( circle at 50% 96.9%, $gd2 1.9vmin, $t calc( 1.9vmin + 1px) ),
       // white part
       linear-gradient( #f3f0f3 6.5%, $t calc( 6.7% + 1px ), $t 93%, $w calc( 93.1% + 1px )),
-      linear-gradient( 90deg, $w 3%, $t calc( 3.2% + 1px ), $t 97%, $w calc( 97.2% + 1px )),
+      linear-gradient( 90deg, $w 3%, $t calc( 3.2% + 1px ), $t 96.8%, $w calc( 97% + 1px )),
       linear-gradient( $b 6.6%, $t calc( 6.8% + 1px ), $t 92.9%, $b calc( 93% + 1px )),
-      linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
+      linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.6%, $b calc( 97% + 1px )),
       // screen
       linear-gradient( 247deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
       linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.5 ) calc( 30% + 2px ), $t 70% ),
