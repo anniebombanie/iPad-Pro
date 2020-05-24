@@ -127,10 +127,12 @@ div {
       linear-gradient( $b 6.6%, $t calc( 6.8% + 1px ), $t 92.9%, $b calc( 93% + 1px )),
       linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
       // screen
+      linear-gradient( 245deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
+      linear-gradient( 333deg, $t 35%, rgba( #48d8a4, 0.24 ) calc( 35% + 2px ), $t 80% ),
       linear-gradient( 160deg, #ec008c, $t 60% ),
-      linear-gradient( 90deg, #10afe0, $t ),
-      linear-gradient( 25deg, $t 25%, #ed1524, #6a1f53 60%, $t 90%),
-      linear-gradient( 125deg, #1d5787 25%, #ed1524, #3a7e8b 50%, #30697a 90%);
+      linear-gradient( 90deg, #10afe0 9%, $t ),
+      linear-gradient( 25deg, $t 25%, #7689d8 60%, $t 90%),
+      linear-gradient( 125deg, #1d5787 25%, #48d8a4 50% );
   }
 }
 
