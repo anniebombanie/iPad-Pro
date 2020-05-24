@@ -111,8 +111,8 @@ div {
     transform: translate3d( -30%, -50%, 0 );
     box-shadow:
       // thin outline border
-      inset 0.1vmin 0.1vmin 0 0 $gd1,
-      inset -0.1vmin -0.1vmin 0 0 $gd1;
+      0.1vmin 0.1vmin 0 0 $gd1,
+      -0.1vmin -0.08vmin 0 0 $gd1;
     background:
       // camera
       radial-gradient( circle at 50.1% 3.4%, rgba( $w, 0.2 ) 0.1vmin, $t calc( 0.2vmin + 1px) ),
@@ -131,8 +131,8 @@ div {
       linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
       // screen
       linear-gradient( 247deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
-      linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.4 ) calc( 30% + 2px ), $t 70% ),
-      linear-gradient( 160deg, #ec008c, $t 60% ),
+      linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.5 ) calc( 30% + 2px ), $t 70% ),
+      linear-gradient( 160deg, #ec008c, $t 50% ),
       linear-gradient( 90deg, #10afe0 9%, $t ),
       linear-gradient( 25deg, $t 25%, #7689d8 60%, $t 90%),
       linear-gradient( 100deg, #3a5cec 10%, #eeb4aa );
