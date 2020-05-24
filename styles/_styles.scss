@@ -23,6 +23,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
+  background: linear-gradient( #fff, #eaeaea );
 }
 
 div,
@@ -73,7 +74,7 @@ div {
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
     // bottom holes
-    radial-gradient( circle at 0% 97%, $gd3 1vmin, $t 1vmin ) 50% 100% / 60% 60% no-repeat,
+    // radial-gradient( circle at 0% 97%, $gd3 1vmin, $t 1vmin ) 50% 100% / 60% 60% no-repeat,
     // linear-gradient( 90deg, green 60% ),
     // background
     linear-gradient( $g, $gd1 );
@@ -124,7 +125,7 @@ div {
       radial-gradient( circle at 49.2% 97.1%, $gd1 1.2vmin, $t calc( 1.4vmin + 1px) ),
       radial-gradient( circle at 50% 96.9%, $gd2 1.9vmin, $t calc( 1.9vmin + 1px) ),
       // white part
-      linear-gradient( $w 6.5%, $t calc( 6.7% + 1px ), $t 93%, $w calc( 93.1% + 1px )),
+      linear-gradient( #f3f0f3 6.5%, $t calc( 6.7% + 1px ), $t 93%, $w calc( 93.1% + 1px )),
       linear-gradient( 90deg, $w 3%, $t calc( 3.2% + 1px ), $t 97%, $w calc( 97.2% + 1px )),
       linear-gradient( $b 6.6%, $t calc( 6.8% + 1px ), $t 92.9%, $b calc( 93% + 1px )),
       linear-gradient( 90deg, $b 3.1%, $t calc( 3.4% + 1px ), $t 96.9%, $b calc( 97% + 1px )),
