@@ -85,10 +85,14 @@ div {
     -0.3vmin 0.5vmin 1vmin 0 rgba( $gd3, 0.6 ),
     -3.5vmin 1vmin 3vmin -1vmin rgba( $gd2, 0.6 );
     background:
+    // four corner shine
     radial-gradient( circle at 2.2% 2.5%, $gl 0.2vmin, $t calc( 1vmin + 1px) ),
     radial-gradient( circle at 96.5% 1.7%, $gl .5vmin, $t calc( 1vmin + 1px) ),
+    radial-gradient( circle at 96.25% 98.5%, $gl 0.7vmin, $t calc( 1vmin + 1px) ),
+    radial-gradient( circle at 2.4% 97%, $gl 0.6vmin, $t calc( 1.2vmin + 1px) ),
+    // background gradients
     linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 10%, $g, $gd1 78%, $gd3 90%, $gd2, $t 98% ),
-    linear-gradient( $gl 1.5%, $gd3 2.5%, $gd1 15%, $g, $gd1 75%, $gd3 97%, $gd2, $gl ),
+    linear-gradient( $gl 1.5%, $gd3 2.5%, $gd1 15%, $g, $gd1 75%, $gd3 99%, $gd2, $gl ),
     $g;
   }
 
