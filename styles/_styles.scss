@@ -50,7 +50,7 @@ div {
   inset 0 0.6vmin 1.5vmin 0.2vmin rgba( $gd2, 0.5 ),
   inset -0.5vmin 0.1vmin 0.1vmin 0.1vmin $gd3,
   // inset -1vmin -1.5vmin 1.5vmin 0.1vmin rgba( $gd2, 0.9 ),
-  inset 0 -0.05vmin 0.3vmin 0.1vmin $gd3,
+  // inset 0 -0.05vmin 0.3vmin 0.1vmin $gd3,
   // inset -2vmin 0.5vmin 0.2vmin 0.3vmin rgba( $gd1, 0.4 ),
   // inset 0.2vmin 0 1vmin 0 rgba( $gd2, 0.8 ),
   // inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
@@ -92,7 +92,13 @@ div {
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
     //side buttons
-    linear-gradient( $t 7.5%, green calc( 7.5% + 1px ), green 17%, $t calc( 17% + 1px ) ),
+    linear-gradient( 90deg, $t 0.6%, $gd2 calc( 0.7% + 1px ), $t 1.2% ), /*brown v line */
+    linear-gradient( $t 7.7%, $g calc( 8% + 1px ), $g 11.3%, $t 11.7%, $t 12.9%, $g 13.4%, $g 16.6%, $t calc( 17.4% + 1px ) ),
+    radial-gradient( circle at 0.1% 10.8%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
+    radial-gradient( circle at 0.1% 13.8%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
+    // linear-gradient( $t 7.8%, $g calc( 8% + 1px ), $g 16.6%, $t calc( 17% + 1px ) ),
+    radial-gradient( circle at 0.1% 8.6%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
+    radial-gradient( circle at 0.1% 16.2%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
     // background
     linear-gradient( $g, $gd1 );
 
