@@ -55,7 +55,7 @@ div {
   inset 0 2vmin 0.5vmin 0 rgba( $gl, 0.8 ),
   inset 0.2vmin 0 0.6vmin 1.4vmin rgba( $gl, 0.8 ),
   -1.5vmin 0.5vmin 2.5vmin 0 rgba( $gd2, 0.2 );
-  background-image:
+  background:
     // lens black
     radial-gradient( circle at 6.5% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px) ),
     radial-gradient( circle at 6.2% 4.4%, #487f9e 0.1vmin, $t calc( 0.25vmin + 1px) ),
@@ -72,6 +72,9 @@ div {
     radial-gradient( circle at 6.6% 7.5%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
+    // bottom holes
+    radial-gradient( circle at 0% 97%, $gd3 1vmin, $t 1vmin ) 50% 100% / 60% 60% no-repeat,
+    // linear-gradient( 90deg, green 60% ),
     // background
     linear-gradient( $g, $gd1 );
 
