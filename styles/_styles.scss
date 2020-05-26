@@ -59,27 +59,24 @@ div {
   inset 0.4vmin 1.5vmin 0.6vmin 1.2vmin rgba( $gl, 0.5 ),
   -1.5vmin 0.4vmin 2.5vmin 0 rgba( $gd2, 0.2 );
   background:
-    //top knob
-    radial-gradient( circle at 6% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-
     // top holes
-    radial-gradient( circle at 13% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 14.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 16% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 17.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 19% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 20.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 22% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 23.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 13% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 14.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 16% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 17.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 19% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 20.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 22% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 23.5% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
     // bottom holes
-    radial-gradient( circle at 23.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 25% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 26.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 28% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 29.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
-    radial-gradient( circle at 31% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px) ),
+    radial-gradient( circle at 23.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 25% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 26.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 28% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 29.5% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 31% 99.9%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
     // lens black
-    radial-gradient( circle at 6.1% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px) ),
+    radial-gradient( circle at 6.1% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px )),
     radial-gradient( circle at 5.8% 4.4%, #487f9e 0.1vmin, $t 0.35vmin ),
     radial-gradient( circle at 6% 4.1%, #253044 0.4vmin, #253044 calc( 0.4vmin + 1px ), #131919 0.9vmin, $b 1.3vmin, $g calc( 1.35vmin + 1px ), $t 1.5vmin ),
     radial-gradient( circle at 5.8% 2.1%, $g 0.8vmin, $t 1.7vmin ),
@@ -90,41 +87,49 @@ div {
     // lens white
     radial-gradient( circle at 6% 7.7%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
     radial-gradient( circle at 6.2% 7.5%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
-    radial-gradient( circle at 6% 7.6%, #eae7d0 0.1vmin, #ece3d1 0.2vmin, #f9f7ea .3vmin, $t calc( 0.4vmin + 1px)),
+    radial-gradient( circle at 6% 7.6%, #eae7d0 0.1vmin, #ece3d1 0.2vmin, #f9f7ea .4vmin, $t 0.55vmin ),
     radial-gradient( circle at 6.2% 7.5%, $gd2 0.4vmin, $t 0.55vmin ),
     radial-gradient( circle at 5.8% 7.7%, $gd2 0.4vmin, $t 0.55vmin ),
     radial-gradient( circle at 6% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
     //side buttons
-    radial-gradient( circle at 1% 12.3%, rgba( $g, 0.4 ) 0.3vmin, $t 0.9vmin ),
-    linear-gradient( $t 17.2%, $g 17.4%, darken( $gd1, 5 )),
-    linear-gradient( 90deg, $t 0.9%, $g 1.2% ),
-    linear-gradient( -150deg, $g 33.6%, $gd3 33.8%, $gd3 33.9%, $t 34.1% ),
-    linear-gradient( -220deg, $t 10.5%, $gd3 10.7%, $gd3 10.8%, $g 10.9%),
-    linear-gradient( 90deg, $t 0.7%, $gd2 0.9%, $t 1.2% ), /*brown v line */
-    radial-gradient( circle at 0.6% 11.5%, $gd3 0.15vmin, $t 0.3vmin ),
-    radial-gradient( circle at 0.6% 13%, $gd3 0.15vmin, $t 0.3vmin ),
-    linear-gradient( 90deg, $w 1.2%, $t );
+    radial-gradient( circle at -0.2% 8.3%, $g 0.6vmin, $t 0.7vmin ),
+    radial-gradient( circle at -0.1% 8%, $b 0.6vmin, $t 0.7vmin ),
+    linear-gradient( $t 1%, $g 2%, $g 8%, $t 8% ),
+    radial-gradient( circle at -0.2% 16.2%, $g 0.6vmin, $t 0.7vmin ),
+    radial-gradient( circle at -0.1% 16.5%, $b 0.6vmin, $t 0.7vmin ),
+    radial-gradient( circle at 0.6% 11.5%, $b 0.15vmin, $t 0.3vmin ),
+    radial-gradient( circle at 0.6% 13%, $b 0.15vmin, $t 0.3vmin ),
+    linear-gradient( $t 16.8%, $g 17%, darken( $gd1, 5 )),
+    linear-gradient( 90deg, $t 0.7%, $gd2 0.9%, $t 1.2% ), /* brown v line */
+    //top knob
+    radial-gradient( circle at 6.2% 0.2%, $g 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 5.7% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 10.3% 0.2%, $g 0.25vmin, $t calc( 0.25vmin + 1px )),
+    radial-gradient( circle at 10.8% 0.2%, $bd 0.25vmin, $t calc( 0.25vmin + 1px )),
+    linear-gradient( 90deg, $g, $g 5.6%, $t 5.8%, $t 10.7%, $g 10.9% ),
+    linear-gradient( $t 0.4%, $b 0.6%, $t 0.8% ), /* brown h line */
+    $g;
 
   /* --- front --- */
-  &::before {
-    content: '';
-    display: block;
-    transform: translate3d( -22%, -50%, 0 );
-    box-shadow:
-    -0.3vmin 0.5vmin 1vmin 0 rgba( $gd3, 0.6 ),
-    -3.5vmin 1vmin 3vmin -1vmin rgba( $gd2, 0.6 );
+  // &::before {
+  //   content: '';
+  //   display: block;
+  //   transform: translate3d( -22%, -50%, 0 );
+  //   box-shadow:
+  //   -0.3vmin 0.5vmin 1vmin 0 rgba( $gd3, 0.6 ),
+  //   -3.5vmin 1vmin 3vmin -1vmin rgba( $gd2, 0.6 );
 
-    background:
-    // four corner shine
-    radial-gradient( circle at 1.6% 1.6%, $gl 0.2vmin, $t 1.3vmin ),
-    radial-gradient( circle at 97.5% 1.7%,  $gl .5vmin, $t 1.3vmin ),
-    radial-gradient( circle at 97.8% 99.3%, $gl 0.7vmin, $t 1.3vmin ),
-    radial-gradient( circle at 2% 98%, $gl 0.6vmin, $t 1.3vmin ),
-    // background gradients
-    linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 15%, $g, $gd1 78%, $gd3 90%, $gd2, $t 99% ),
-    linear-gradient( $gl 1.5%, $gd3 2%, $gd1 15%, $g, $gd1 70%, $gd3 98%, $gl ),
-    $g;
-  }
+  //   background:
+  //   // four corner shine
+  //   radial-gradient( circle at 1.6% 1.6%, $gl 0.2vmin, $t 1.3vmin ),
+  //   radial-gradient( circle at 97.5% 1.7%,  $gl .5vmin, $t 1.3vmin ),
+  //   radial-gradient( circle at 97.8% 99.3%, $gl 0.7vmin, $t 1.3vmin ),
+  //   radial-gradient( circle at 2% 98%, $gl 0.6vmin, $t 1.3vmin ),
+  //   // background gradients
+  //   linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 15%, $g, $gd1 78%, $gd3 90%, $gd2, $t 99% ),
+  //   linear-gradient( $gl 1.5%, $gd3 2%, $gd1 15%, $g, $gd1 70%, $gd3 98%, $gl ),
+  //   $g;
+  // }
 
   // /* --- screen --- */
   &::after {
@@ -142,8 +147,8 @@ div {
       -0.1vmin -0.08vmin 0 0 $gd1;
     background:
       // camera
-      radial-gradient( circle at 50.1% 3.4%, rgba( $w, 0.3 ) 0.1vmin, $t 0.5vmin ),
-      radial-gradient( circle at 50% 3.5%, $b 0.3vmin, $t 0.5vmin ),
+      radial-gradient( circle at 50.1% 3.4%, rgba( $w, 0.4 ) 0.1vmin, $t 0.5vmin ),
+      radial-gradient( circle at 50% 3.5%, $b 0.35vmin, $t 0.55vmin ),
       // home button
       radial-gradient( circle at 50% 96.8%, $w 1.5vmin, $t calc( 1.5vmin + 1px) ),
       radial-gradient( circle at 51.2% 97.1%, $g 0.8vmin, $t 1.3vmin ),
