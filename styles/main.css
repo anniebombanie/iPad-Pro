@@ -16,8 +16,6 @@ body {
   min-height: 100vh;
   position: relative;
   overflow: hidden;
-  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#eaeaea));
-  background: linear-gradient(#fff, #eaeaea);
 }
 
 div,
