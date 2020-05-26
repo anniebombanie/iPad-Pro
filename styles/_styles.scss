@@ -92,16 +92,14 @@ div {
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t 0.55vmin ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
     //side buttons
-    // linear-gradient( -170deg, green 17.5%, $t calc( 18% + 1px ), $t calc( 17.4% + 1px ) ),
+    linear-gradient( $t 17.4%, $g 17.4%, $gd1 ),
+    linear-gradient( 90deg, $t 0.6%, $g 1% ),
+    linear-gradient( -225deg, $t 10%, $gd3 10.2%, $gd3 10.3%, $g 10.3%),
     linear-gradient( -145deg, $g 37.4%, $gd3 37.6%, $gd3 37.7%, $t 37.75%),
     linear-gradient( 90deg, $t 0.6%, $gd3 0.7%, $t 1.1% ), /*brown v line */
-    // linear-gradient( $t 7.7%, $g calc( 8% + 1px ), $g 11.3%, $t 11.7%, $t 12.9%, $g 13.4%, $g 16.6%, $t calc( 17.4% + 1px ),
     radial-gradient( circle at 0.5% 11%, $b 0.1vmin, $t 0.2vmin ),
-    radial-gradient( circle at 0.5% 13.7%, $b 0.1vmin, $t 0.2vmin ),
-    // radial-gradient( circle at 0.05% 8.6%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
-    radial-gradient( circle at 0.05% 16.2%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
+    radial-gradient( circle at 0.5% 13.7%, $b 0.1vmin, $t 0.2vmin );
     // background
-    linear-gradient( $g 18%, darken( $gd1, 5 ) );
 
   /* --- front --- */
   &::before {
@@ -118,7 +116,7 @@ div {
     radial-gradient( circle at 97.8% 99.3%, $gl 0.7vmin, $t 1.3vmin ),
     radial-gradient( circle at 2% 98%, $gl 0.6vmin, $t 1.3vmin ),
     // background gradients
-    linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 10%, $g, $gd1 78%, $gd3 90%, $gd2, $t 99% ),
+    linear-gradient( 90deg, $t 2%, $gd3 2.5%, $gd1 15%, $g, $gd1 78%, $gd3 90%, $gd2, $t 99% ),
     linear-gradient( $gl 1.5%, $gd3 2%, $gd1 15%, $g, $gd1 70%, $gd3 98%, $gl ),
     $g;
   }
