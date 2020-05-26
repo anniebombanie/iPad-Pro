@@ -92,15 +92,16 @@ div {
     radial-gradient( circle at 6.2% 7.7%, $gd2 0.4vmin, $t calc( 0.5vmin + 1px) ),
     radial-gradient( circle at 6.4% 7.6%, rgba( $gd2, 0.3 ) 0.7vmin, $t calc( 0.7vmin + 1px)),
     //side buttons
-    linear-gradient( 90deg, $t 0.6%, $gd2 calc( 0.7% + 1px ), $t 1.2% ), /*brown v line */
-    linear-gradient( $t 7.7%, $g calc( 8% + 1px ), $g 11.3%, $t 11.7%, $t 12.9%, $g 13.4%, $g 16.6%, $t calc( 17.4% + 1px ) ),
-    radial-gradient( circle at 0.1% 10.8%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
-    radial-gradient( circle at 0.1% 13.8%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
-    // linear-gradient( $t 7.8%, $g calc( 8% + 1px ), $g 16.6%, $t calc( 17% + 1px ) ),
-    radial-gradient( circle at 0.1% 8.6%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
-    radial-gradient( circle at 0.1% 16.2%, $b 0.6vmin, $t calc( 0.9vmin + 1px) ),
+    // linear-gradient( -170deg, green 17.5%, $t calc( 18% + 1px ), $t calc( 17.4% + 1px ) ),
+    linear-gradient( 90deg, $t 0.6%, $gd3 calc( 0.7% + 1px ), $t 1.1% ), /*brown v line */
+    linear-gradient( -145deg, $t 37.4%, blue calc( 37.8% + 1px ), $g 39.4%, blue calc( 36.2% + 1px ), $g 20.3%, $t 11.7%, $t 12.9%, $g 13.4%, $g 16.6%, $t calc( 17.4% + 1px ) ),
+    // linear-gradient( $t 7.7%, $g calc( 8% + 1px ), $g 11.3%, $t 11.7%, $t 12.9%, $g 13.4%, $g 16.6%, $t calc( 17.4% + 1px ) ),
+    radial-gradient( circle at 0.05% 10.8%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
+    radial-gradient( circle at 0.05% 13.9%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
+    radial-gradient( circle at 0.05% 8.6%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
+    radial-gradient( circle at 0.05% 16.2%, $b 0.6vmin, $t calc( 0.8vmin + 1px) ),
     // background
-    linear-gradient( $g, $gd1 );
+    linear-gradient( $g 18%, darken( $gd1, 5 ) );
 
   /* --- front --- */
   &::before {
@@ -155,9 +156,9 @@ div {
       // screen
       linear-gradient( 247deg, rgba( $w, 0.1 ) 40%, $t calc( 40% + 2px )),
       linear-gradient( -20deg, $t 30%, rgba( #48d8a4, 0.5 ) calc( 30% + 2px ), $t 80% ),
-      linear-gradient( 160deg, #ec008c, $t 50% ),
-      linear-gradient( 90deg, #10afe0 9%, $t 85% ),
-      linear-gradient( 100deg, #3a5cec 10%, #eeb4aa );
+      linear-gradient( 150deg, #ec008c, $t 50% ),
+      linear-gradient( 80deg, #10afe0 5%, $t 65% ),
+      linear-gradient( 160deg, #3a5cec 10%, #eeb4aa );
   }
 }
 
