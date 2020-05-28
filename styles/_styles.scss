@@ -23,7 +23,6 @@ body {
   margin: 0;
   min-height: 100vh;
   position: relative;
-  overflow: hidden;
 }
 
 div,
@@ -73,12 +72,12 @@ div {
     // lens black
     radial-gradient( circle at 6.1% 3.8%, #3a4d67 0.2vmin, $t calc( 0.2vmin + 1px )),
     radial-gradient( circle at 5.8% 4.4%, #487f9e 0.1vmin, $t 0.35vmin ),
-    radial-gradient( circle at 6% 4.1%, #253044 0.4vmin, #253044 calc( 0.4vmin + 1px ), #131919 0.9vmin, $b 1.3vmin, $g calc( 1.35vmin + 1px ), $t 1.5vmin ),
+    radial-gradient( circle at 6% 4.1%, #253044 0.4vmin, #253044 calc( 0.4vmin + 1px ), #131919 0.9vmin, $b 1.3vmin, $g 1.44vmin, $t 1.5vmin ),
     radial-gradient( circle at 5.8% 2.1%, $g 0.8vmin, $t 1.7vmin ),
     radial-gradient( circle at 7% 3.6%, darken( $gd2, 35 ) 0.5vmin, $t 1vmin ),
     radial-gradient( circle at 4.9% 4.5%, darken( $gd2, 35 ) 0.5vmin, $t 1vmin ),
-    radial-gradient( circle at 7% 4.4%, $gd2 0.7vmin, $t calc( 0.9vmin + 1px) ),
-    radial-gradient( circle at 6% 4.1%, $g 1.5vmin, rgba( $gd2, 0.6 ) 1.6vmin, $t calc( 1.7vmin + 1px)),
+    radial-gradient( circle at 7% 4.4%, $gd2 0.7vmin, $t 1vmin ),
+    radial-gradient( circle at 6% 4.1%, $g 1.5vmin, rgba( $gd2, 0.6 ) 1.6vmin, $t 1.75vmin ),
     // lens white
     radial-gradient( circle at 6% 7.7%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
     radial-gradient( circle at 6.2% 7.5%, #d8d1b0 0.1vmin, $t calc( 0.1vmin + 1px) ),
